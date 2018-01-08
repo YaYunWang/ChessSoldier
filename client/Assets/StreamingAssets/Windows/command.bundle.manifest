@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 4222110319
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b4d0cb76865cfca8b83beb12636ab821
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 71f9b4f851e71a8ddc1b8058440fb231
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/Perfab/UI/Command.bytes
+- Assets/Perfab/UI/Command@sprites.bytes
+- Assets/Perfab/UI/Command@atlas0.png
+Dependencies: []

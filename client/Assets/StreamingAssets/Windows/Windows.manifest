@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 3482268336
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: config.bundle
+      Dependencies: {}
+    Info_1:
+      Name: story.bundle
+      Dependencies: {}
+    Info_2:
+      Name: login.bundle
+      Dependencies: {}
+    Info_3:
+      Name: command.bundle
+      Dependencies: {}
+    Info_4:
+      Name: loading.bundle
+      Dependencies: {}

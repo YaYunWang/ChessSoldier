@@ -111,6 +111,22 @@ public class AssetBundleManager : ManagerTemplate<AssetBundleManager>
         return LoadAsset(assetBundleName, assetName, typeof(T)) as T;
     }
 
+	public static AssetBundle LoadAsset(string assetBundleName)
+	{
+		LoadAssetBundle(assetBundleName, true, true);
+
+		string error;
+		LoadedAssetBundle loadedBundle = GetLoadedAssetBundle(assetBundleName, out error);
+
+		if (loadedBundle == null || !string.IsNullOrEmpty(error))
+		{
+			Debug.LogErrorFormat("Failed to load assetbundle. {0}", error);
+			return null;
+		}
+
+		return loadedBundle.assetBundle;
+	}
+
     public static Object LoadAsset(string assetBundleName, string assetName, System.Type type)
     {
 #if UNITY_EDITOR
@@ -176,10 +192,10 @@ public class AssetBundleManager : ManagerTemplate<AssetBundleManager>
         return bundle;
     }
 
-    private static void LoadAssetBundle(string assetBundleName, bool sync)
+    private static void LoadAssetBundle(string assetBundleName, bool sync, bool notSimulate = false)
     {
 #if UNITY_EDITOR
-        if (SimulateAssetBundleInEditor)
+        if (!notSimulate && SimulateAssetBundleInEditor)
             return;
 #endif
 
