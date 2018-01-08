@@ -1,7 +1,7 @@
 象棋武士：
 
 	kbe v1.0.0
-	unity 2017.3.0f3
+	unity 2017.1.0f3
 	
 	NO1. 服务器搭建
 		打开server\kbe\src 编译
