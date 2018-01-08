@@ -1,0 +1,10 @@
+<Table>
+  <Row ID="1" AssetName="test_001" Loop="FALSE" Volume="1" Priority="2" />
+  <Row ID="2" AssetName="test_002" Loop="FALSE" Volume="1" Priority="2" />
+  <Row ID="3" AssetName="test_003" Loop="FALSE" Volume="1" Priority="2" />
+  <Row ID="4" AssetName="test_004" Loop="FALSE" Volume="1" Priority="1" />
+  <Row ID="5" AssetName="test_005" Loop="FALSE" Volume="1" Priority="1" />
+  <Row ID="6" AssetName="test_006" Loop="FALSE" Volume="1" Priority="1" />
+  <Row ID="7" AssetName="testbgm-001" Loop="TRUE" Volume="1" Priority="4" Fadein="2000" Fadeout="2000" />
+  <Row ID="8" AssetName="testbgm-002" Loop="TRUE" Volume="1" Priority="4" Fadein="2000" Fadeout="2000" />
+</Table>

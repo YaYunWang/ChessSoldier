@@ -1,0 +1,28 @@
+<Table>
+  <Row ID="100000" Name="测试NPC" Script="AttackNpc" Level="1" ModelName="310201" Controller="310201" MoveSpeed="4" SmartID="7000000" DestroyTime="1000" ChaseRange="100" AttackID="5051" MaxHP="1000000" REC_ComboSkillRec="100000" Effect="520601" />
+  <Row ID="100001" Name="测试NPC" Script="AttackNpc" Level="1" ModelName="310201" Controller="310201" MoveSpeed="4" DestroyTime="1000" ChaseRange="100" AttackID="5051" MaxHP="1000000" REC_ComboSkillRec="100000" />
+  <Row ID="100002" Name="测试NPC" Script="AttackNpc" Level="1" ModelName="3003001" SmartID="52061" MaxHP="1000000" UseMasterProp="1" Effect="520601" />
+  <Row ID="100003" Name="测试NPC" Script="AttackNpc" Level="1" ModelName="3003001" SmartID="52191" MaxHP="1000000" UseMasterProp="1" />
+  <Row ID="100004" Name="测试NPC" Script="AttackNpc" Level="1" ModelName="3003001" SmartID="52071" MaxHP="1000000" UseMasterProp="1" Effect="520703" />
+  <Row ID="100005" Name="测试NPC" Script="AttackNpc" Level="1" ModelName="3003001" SmartID="53031" MaxHP="1000000" UseMasterProp="1" Effect="530301" />
+  <Row ID="100006" Name="测试NPC" Script="AttackNpc" Level="1" ModelName="3003001" SmartID="50551" MaxHP="1000000" UseMasterProp="1" Effect="505503" />
+  <Row ID="3003001" Name="南素柔312017" Script="NormalNpc" Level="1" ModelName="310201" Controller="310201" MoveSpeed="4" />
+  <Row ID="3003002" Name="道天风3114131" Script="NormalNpc" Level="1" ModelName="310201" Controller="310201" MoveSpeed="4" />
+  <Row ID="3003003" Name="孔向森312004" Script="NormalNpc" Level="1" ModelName="310201" Controller="310201" MoveSpeed="4" />
+  <Row ID="3003004" Name="炮弹堆" Script="NormalNpc" Level="1" ModelName="310201" Controller="310201" MoveSpeed="4" />
+  <Row ID="3003005" Name="受伤的士兵312005" Script="NormalNpc" Level="1" ModelName="310201" Controller="310201" MoveSpeed="4" />
+  <Row ID="3003006" Name="解毒草" Script="NormalNpc" Level="1" ModelName="310201" Controller="310201" MoveSpeed="4" />
+  <Row ID="3003007" Name="村长-郭大雷312008" Script="NormalNpc" Level="1" ModelName="310201" Controller="310201" MoveSpeed="4" />
+  <Row ID="3003008" Name="范健312016" Script="NormalNpc" Level="1" ModelName="310201" Controller="310201" MoveSpeed="4" />
+  <Row ID="3003009" Name="可疑点" Script="NormalNpc" Level="1" ModelName="310201" Controller="310201" MoveSpeed="4" />
+  <Row ID="3001001" Name="冲角团登入兵3112004" Script="AttackNpc" Level="1" ModelName="3112004" MoveSpeed="4" MaxHP="100" />
+  <Row ID="3001002" Name="冲角团突击兵3112003" Script="AttackNpc" Level="1" ModelName="3112003" MoveSpeed="4" MaxHP="100" />
+  <Row ID="3001003" Name="冲角团精锐兵3112008" Script="AttackNpc" Level="1" ModelName="3112008" MoveSpeed="4" MaxHP="100" />
+  <Row ID="3001004" Name="密林潜伏者3112015" Script="AttackNpc" Level="1" ModelName="3112015" MoveSpeed="4" MaxHP="100" />
+  <Row ID="3001005" Name="密林山贼3112014" Script="AttackNpc" Level="1" ModelName="3112014" MoveSpeed="4" MaxHP="100" />
+  <Row ID="3001006" Name="毒蜘蛛3112020" Script="AttackNpc" Level="1" ModelName="3112020" MoveSpeed="4" MaxHP="100" />
+  <Row ID="3001007" Name="树妖3112120" Script="AttackNpc" Level="1" ModelName="3112120" MoveSpeed="4" MaxHP="100" />
+  <Row ID="3001008" Name="蛇妖3112130" Script="AttackNpc" Level="1" ModelName="3112130" MoveSpeed="4" MaxHP="100" />
+  <Row ID="3002001" Name="混江龙3111008" Script="AttackNpc" Level="1" ModelName="3111008" MoveSpeed="4" MaxHP="100" />
+  <Row ID="3002002" Name="罗刹3111001" Script="AttackNpc" Level="1" ModelName="3111001" MoveSpeed="4" MaxHP="100" />
+</Table>

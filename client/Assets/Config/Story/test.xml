@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Object>
+  <Movie Type="ObjectEnable" StartTime="3.46" EndTime="6.7" ObjectURL="" ObjectValue="False" IsReturn="True" />
+  <Movie Type="PlayEffect" StartTime="6.93" EndTime="15.28" EffectID="-1" Desotry="True" />
+</Object>
