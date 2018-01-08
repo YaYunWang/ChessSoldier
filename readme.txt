@@ -2,6 +2,7 @@
 
 	kbe v1.0.0
 	unity 2017.1.0f3
+	UI FairyGUI-Editor
 	
 	NO1. 服务器搭建
 		打开server\kbe\src 编译
