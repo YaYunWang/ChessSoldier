@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="5xx7jigk" jpegQuality="80" compressPNG="true">
+  <resources>
+    <image id="uu5i0" name="button_429.png" path="/" scale="9grid" scale9grid="23,23,46,46"/>
+    <image id="uu5i1" name="button_431.png" path="/"/>
+    <image id="uu5i2" name="button_427.png" path="/"/>
+    <image id="uu5i3" name="button_338.png" path="/" scale="9grid" scale9grid="25,15,50,30"/>
+    <component id="uu5i6" name="NormalButton.xml" path="/" exported="true"/>
+  </resources>
+  <publish name="Command"/>
+</packageDescription>

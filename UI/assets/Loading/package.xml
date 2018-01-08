@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="tmd1to1f" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="uu5i0" name="LoadingUIPanel.xml" path="/" exported="true"/>
+    <image id="uu5i1" name="yingzheng.jpg" path="/"/>
+  </resources>
+  <publish name="Loading"/>
+</packageDescription>
