@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component size="1136,0">
+<component size="1136,640">
   <displayList>
     <text id="n1_7fay" name="use_name" xy="422,139" size="353,58" input="true" fontSize="36" autoSize="none" text=""/>
     <text id="n2_7fay" name="n2" xy="292,140" size="124,58" input="true" fontSize="36" autoSize="none" text="帐号："/>

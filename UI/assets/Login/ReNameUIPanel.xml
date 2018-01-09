@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1136,640">
+  <displayList>
+    <text id="n0_jg4e" name="n0" xy="273,169" size="115,45" fontSize="27" color="#00ff00" autoSize="none" text="请起名："/>
+    <text id="n1_jg4e" name="name" xy="393,167" size="263,47" input="true" fontSize="27" color="#00ff00" autoSize="none" text=""/>
+    <component id="n2_jg4e" name="createname_btn" src="uu5i6" pkg="5xx7jigk" xy="347,248"/>
+  </displayList>
+</component>
