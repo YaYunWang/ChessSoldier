@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1136,640">
+  <displayList>
+    <text id="n0_e867" name="n0" xy="360,89" size="416,55" hideByEditor="true" fontSize="44" color="#993399" autoSize="shrink" text="测试测试测试测试测试"/>
+  </displayList>
+  <transition name="message">
+    <item time="0" type="XY" target="n0_e867" tween="true" startValue="360,89" endValue="-,-67" duration="24"/>
+  </transition>
+</component>

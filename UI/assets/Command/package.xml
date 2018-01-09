@@ -6,6 +6,7 @@
     <image id="uu5i2" name="button_427.png" path="/"/>
     <image id="uu5i3" name="button_338.png" path="/" scale="9grid" scale9grid="25,15,50,30"/>
     <component id="uu5i6" name="NormalButton.xml" path="/" exported="true"/>
+    <component id="e8677" name="MessageUIPanel.xml" path="/" exported="true"/>
   </resources>
   <publish name="Command"/>
 </packageDescription>
