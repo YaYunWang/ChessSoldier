@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2316583699
+CRC: 181381223
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d05d2aaad05cc4aa35db57f4406833af
+    Hash: 350ae441c3af0e69cd878472461fcde2
   TypeTreeHash:
     serializedVersion: 2
     Hash: 71f9b4f851e71a8ddc1b8058440fb231
@@ -14,7 +14,7 @@ ClassTypes:
 - Class: 49
   Script: {instanceID: 0}
 Assets:
-- Assets/Perfab/UI/Loading@atlas0.png
-- Assets/Perfab/UI/Loading@sprites.bytes
-- Assets/Perfab/UI/Loading.bytes
+- Assets/Perfab/UI/Command.bytes
+- Assets/Perfab/UI/Command@sprites.bytes
+- Assets/Perfab/UI/Command@atlas0.png
 Dependencies: []

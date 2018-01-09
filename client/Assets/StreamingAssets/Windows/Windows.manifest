@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 3482268336
+CRC: 178479630
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -9,11 +9,11 @@ AssetBundleManifest:
       Name: story.bundle
       Dependencies: {}
     Info_2:
-      Name: login.bundle
+      Name: ui/login.bundle
       Dependencies: {}
     Info_3:
-      Name: command.bundle
+      Name: ui/loading.bundle
       Dependencies: {}
     Info_4:
-      Name: loading.bundle
+      Name: ui/command.bundle
       Dependencies: {}

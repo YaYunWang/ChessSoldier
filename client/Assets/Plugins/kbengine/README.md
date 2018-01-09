@@ -30,21 +30,23 @@ Usage
 			entity.cellCall("cell_func", 1, "arg2", "argN")
 
 	3: Monitor KBE-plugins event
-		public class UI : MonoBehaviour
-		{
-			void Start () 
+		For example:
+			public class UI : MonoBehaviour
 			{
-				KBEngine.Event.registerOut("onConnectStatus", this, "onConnectStatus");
-			}
+				void Start () 
+				{
+					KBEngine.Event.registerOut("onConnectionState", this, "onConnectionState");
+				}
 
-			public void onConnectStatus(bool success)
-			{
-				// KBE-plugins event fired
+				public void onConnectionState(bool success)
+				{
+					// KBE-plugins event fired
+				}
 			}
-		}
 
 	4: Fire events to the KBE-plugins
-		KBEngine.Event.fireIn("login", "stringAccount", "stringPasswd", System.Text.Encoding.UTF8.GetBytes("kbengine_unity3d_demo"));
+		For example:
+			KBEngine.Event.fireIn("login", "stringAccount", "stringPasswd", System.Text.Encoding.UTF8.GetBytes("kbengine_unity3d_demo"));
 
 
 
@@ -174,7 +176,7 @@ KBE-Plugin fire-out events(KBE => Unity):
 			Event-datas: 
 				No datas.
 
-		onReLoginBaseapp
+		onReloginBaseapp
 			Description: 
 				Relogin to baseapp.
 
@@ -205,7 +207,7 @@ KBE-Plugin fire-out events(KBE => Unity):
 				uint16: retcode
 					http://kbengine.org/docs/configuration/server_errors.html
 
-		onReLoginBaseappFailed
+		onReloginBaseappFailed
 			Description: 
 				Relogin baseapp failed.
 
@@ -213,7 +215,7 @@ KBE-Plugin fire-out events(KBE => Unity):
 				uint16: retcode
 					http://kbengine.org/docs/configuration/server_errors.html
 
-		onReLoginBaseappSuccessfully
+		onReloginBaseappSuccessfully
 			Description: 
 				Relogin baseapp success.
 
@@ -247,14 +249,14 @@ KBE-Plugin fire-out events(KBE => Unity):
 				string: key
 
 	Network events:
-		onConnectStatus
+		onConnectionState
 			Description: 
 				Status of connection server.
 
 			Event-datas: 
 				bool: success or fail
 
-		onDisableConnect
+		onDisconnected
 			Description: 
 				Status of connection server.
 
@@ -291,7 +293,7 @@ KBE-Plugin fire-in events(Unity => KBE):
 					Data will be recorded into the KBE account database, you can access the datas through the script layer.
 					If you use third-party account system, datas will be submitted to the third-party system.
 
-	reLoginBaseapp
+	reloginBaseapp
 			Description: 
 				Relogin to baseapp.
 

@@ -172,8 +172,15 @@
 				return;
 			}
 
+			ScriptModule module = null;
+			if(!EntityDef.moduledefs.TryGetValue(className, out module))
+			{
+				Dbg.ERROR_MSG("entity::baseCall:  entity-module(" + className + ") error, can not find from EntityDef.moduledefs");
+				return;
+			}
+				
 			Method method = null;
-			if(!EntityDef.moduledefs[className].base_methods.TryGetValue(methodname, out method))
+			if(!module.base_methods.TryGetValue(methodname, out method))
 			{
 				Dbg.ERROR_MSG(className + "::baseCall(" + methodname + "), not found method!");  
 				return;
@@ -222,8 +229,15 @@
 				return;
 			}
 			
+			ScriptModule module = null;
+			if(!EntityDef.moduledefs.TryGetValue(className, out module))
+			{
+				Dbg.ERROR_MSG("entity::cellCall:  entity-module(" + className + ") error, can not find from EntityDef.moduledefs!");
+				return;
+			}
+			
 			Method method = null;
-			if(!EntityDef.moduledefs[className].cell_methods.TryGetValue(methodname, out method))
+			if(!module.cell_methods.TryGetValue(methodname, out method))
 			{
 				Dbg.ERROR_MSG(className + "::cellCall(" + methodname + "), not found method!");  
 				return;
@@ -324,6 +338,10 @@
 			}
 			
 			Event.fireOut("onEnterSpace", new object[]{this});
+			
+			// 要立即刷新表现层对象的位置
+			Event.fireOut("set_position", new object[]{this});
+			Event.fireOut("set_direction", new object[]{this});
 		}
 		
 		public virtual void onEnterSpace()

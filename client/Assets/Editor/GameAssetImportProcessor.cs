@@ -7,7 +7,7 @@ public class GameAssetImportProcessor : AssetPostprocessor
 {
     public static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
     {
-        const string UI_PATH = "Assets/Arts/UI/Panel/";
+        const string UI_PATH = "Assets/Perfab/UI/";
         const string ICON_PATH = "Assets/Arts/Sprites/";
         const string AUDIO_PATH = "Assets/Arts/Audio/";
         const string EFFECT_PATH = "Assets/Arts/Effects/";
@@ -20,9 +20,12 @@ public class GameAssetImportProcessor : AssetPostprocessor
             if (importer == null)
                 continue;
 
-            if (str.Contains(UI_PATH) && ext == ".prefab")
+            if (str.Contains(UI_PATH) && (ext == ".bytes" || ext == ".png"))
             {
-                importer.assetBundleName = string.Format("ui/{0}.bundle", Path.GetFileNameWithoutExtension(str));
+				string uiResName = Path.GetFileNameWithoutExtension(str);
+				string[] uiResNameAry = uiResName.Split('@');
+
+				importer.assetBundleName = string.Format("ui/{0}.bundle", uiResNameAry[0]);
             }
             else if (str.Contains(ICON_PATH) && ext == ".png")
             {

@@ -15,6 +15,8 @@ public class LoginState : GameStateBase
 
 		KBEngine.Event.registerOut("CreateName", this, "OnCreateName");
 		KBEngine.Event.registerOut("AccountInit", this, "OnAccountInit");
+
+		GUIManager.ShowOrLoadView<LoginUIPanel>("Login", "LoginUIPanel");
 	}
 
 	public void OnCreateName()
