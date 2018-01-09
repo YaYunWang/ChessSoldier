@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using KBEngine;
 
 public class LoginState : GameStateBase
 {
@@ -13,29 +14,19 @@ public class LoginState : GameStateBase
 		Debug.Log("entry login");
 		//PanelManager.Instance.OpenPanel("LoginUIPanel");
 
-		KBEngine.Event.registerOut("CreateName", this, "OnCreateName");
-		KBEngine.Event.registerOut("AccountInit", this, "OnAccountInit");
+		KBEngine.Event.registerOut("AccountCreate", this, "OnAccountCreate");
 
 		GUIManager.ShowOrLoadView<LoginUIPanel>("Login", "LoginUIPanel");
 	}
 
-	public void OnCreateName()
+	public void OnAccountCreate(Account account)
 	{
-		//PanelManager.Instance.ClosePanel("LoginUIPanel");
-
-		//PanelManager.Instance.OpenPanel("CreateNameUIPanel");
-	}
-
-	public void OnAccountInit(string name)
-	{
-		Debug.Log("创建名字完成：" + name);
-		//PanelManager.Instance.ClosePanel("LoginUIPanel");
-
-		//GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.World);
+		GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.Main);
 	}
 
 	public override void Leave()
     {
+		GUIManager.DestroyAllView();
     }
 
     public override void Update()

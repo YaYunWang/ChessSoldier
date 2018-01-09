@@ -27,6 +27,11 @@ public class GUIBase
 
 	public virtual void OnDestory()
 	{
+		GRoot.inst.RemoveChild(ViewComponent);
+
+		ViewComponent.Dispose();
+
+		GUIManager.IncReferenceAssetBundle(PackageName);
 	}
 
 	public void EngineBuild()

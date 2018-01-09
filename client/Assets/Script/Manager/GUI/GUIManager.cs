@@ -73,7 +73,7 @@ public class GUIManager : ManagerTemplate<GUIManager>
 			GUIAssetBundle guiAB = new GUIAssetBundle(packageName);
 			guiAB.ReferenceCount();
 
-			guiAB.ReferenceCount();
+			uiAssetDic.Add(packageName, guiAB);
 		}
 	}
 
@@ -152,6 +152,39 @@ public class GUIManager : ManagerTemplate<GUIManager>
 		gui = CreateView<T>(packageName, uiName);
 
 		return gui as T;
+	}
+
+	public static void DestroyView(string uiName)
+	{
+		for (int n = 0; n < uiViewList.Count; ++n)
+		{
+			if (uiViewList[n].UIName == uiName)
+			{
+				GUIBase view = uiViewList[n];
+				if (uiViewDic.ContainsKey(uiName))
+				{
+					uiViewDic.Remove(uiName);
+				}
+				if (uiViewList.Contains(view))
+				{
+					uiViewList.Remove(view);
+				}
+
+				view.OnDestory();
+				view = null;
+				break;
+			}
+		}
+	}
+
+	public static void DestroyAllView()
+	{
+		foreach (KeyValuePair<string, GUIBase> pair in uiViewDic)
+		{
+			pair.Value.OnDestory();
+		}
+		uiViewDic.Clear();
+		uiViewList.Clear();
 	}
 
 	private static T CreateView<T>(string packageName, string uiName) where T : GUIBase

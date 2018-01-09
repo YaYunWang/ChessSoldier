@@ -12,6 +12,8 @@ namespace KBEngine
 			base.__init__();
 
 			Debug.Log("Account is create.");
+
+			Event.fireOut("AccountCreate", this);
 		}
 	}
 }
