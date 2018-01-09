@@ -11,4 +11,6 @@
 			KBE_RES_PATH = %KBE_ROOT%/kbe/res;%KBE_ROOT%/assets/;%KBE_ROOT%/assets/scripts;%KBE_ROOT%/assets/res/
 			KBE_BIN_PATH = %KBE_ROOT%/kbe/bin/server/
 		配置kbengine.xml数据库相关内容
+		
+	2018年1月9日 17:20:16  已经可以成功创建Account。
 	
