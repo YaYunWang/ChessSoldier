@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1136,640">
+  <displayList>
+    <text id="n0_9xrb" name="n0" xy="36,31" size="129,40" fontSize="31" autoSize="none" text="roletype:"/>
+    <text id="n1_9xrb" name="n1" xy="35,82" size="129,40" fontSize="31" autoSize="none" text="名字："/>
+    <text id="n2_9xrb" name="role_type" xy="171,33" size="120,39" fontSize="31" autoSize="none" text=""/>
+    <text id="n3_9xrb" name="name" xy="171,81" size="215,39" fontSize="31" autoSize="none" text=""/>
+  </displayList>
+</component>
