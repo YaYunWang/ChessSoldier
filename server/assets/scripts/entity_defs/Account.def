@@ -1,11 +1,38 @@
 <root>
 	<Properties>
+		<RoleType>
+			<Type>	UINT32	</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<Persistent>	true	</Persistent>
+		</RoleType>
+
+		<RoleName>
+			<Type>	STRING	</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	""	</Default>
+			<Persistent>	true	</Persistent>
+		</RoleName>
+
+		<RoleLevel>
+			<Type>	UINT32	</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	1	</Default>
+			<Persistent>	true	</Persistent>
+		</RoleLevel>
 	</Properties>
 
 	<ClientMethods>
+		<ReCreateAccountResponse>
+			<Arg> INT32 </Arg>
+		</ReCreateAccountResponse>
 	</ClientMethods>
 
 	<BaseMethods>
+		<ReCreateAccountRequest>
+			<Arg> UINT32 </Arg>
+			<Arg> STRING </Arg>
+		</ReCreateAccountRequest>
 	</BaseMethods>
 
 	<CellMethods>

@@ -38,3 +38,7 @@ class Account(KBEngine.Proxy):
 		"""
 		DEBUG_MSG("Account[%i].onClientDeath:" % self.id)
 		self.destroy()
+
+	def ReCreateAccountRequest(self, role_type, name):
+		self.RoleName = name
+		self.RoleType = role_type
