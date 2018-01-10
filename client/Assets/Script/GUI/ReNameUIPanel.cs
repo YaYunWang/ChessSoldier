@@ -19,6 +19,22 @@ public class ReNameUIPanel : GUIBase
 		GObject createBtn = GetChild("createname_btn");
 
 		createBtn.onClick.Add(OnReNameClick);
+
+		KBEngine.Event.registerOut("ReCreateAccountResponse", this, "ReCreateAccountResponse");
+	}
+
+	public void ReCreateAccountResponse(int response)
+	{
+		if(response <= 0)
+		{
+			MainState mainState = GameStateManager.Instance.GetActiveState() as MainState;
+
+			mainState.ChangeMainState();
+		}
+		else
+		{
+			Debug.LogError("创建角色失败.");
+		}
 	}
 
 	private void OnReNameClick(EventContext content)
@@ -34,6 +50,6 @@ public class ReNameUIPanel : GUIBase
 
 		Account account = KBEngineApp.app.player() as Account;
 
-		account.baseCall("ReName", nameValue);
+		account.baseCall("ReCreateAccountRequest", (UINT32)1, nameValue);
 	}
 }

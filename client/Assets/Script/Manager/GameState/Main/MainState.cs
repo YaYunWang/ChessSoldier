@@ -14,7 +14,23 @@ public class MainState : GameStateBase
 	{
 		Dbg.DEBUG_MSG("enter main state.");
 
-		GUIManager.ShowOrLoadView<ReNameUIPanel>("Login", "ReNameUIPanel");
+		Account account = KBEngineApp.app.player() as Account;
+
+		if(account.RoleType <= 0)
+		{
+			GUIManager.ShowOrLoadView<ReNameUIPanel>("Login", "ReNameUIPanel");
+		}
+		else
+		{
+			GUIManager.ShowOrLoadView<MainUIPanel>("Main", "MainUIPanel");
+		}
+	}
+
+	public void ChangeMainState()
+	{
+		GUIManager.DestroyView("ReNameUIPanel");
+
+		GUIManager.ShowOrLoadView<MainUIPanel>("Main", "MainUIPanel");
 	}
 
 	public override void Leave()

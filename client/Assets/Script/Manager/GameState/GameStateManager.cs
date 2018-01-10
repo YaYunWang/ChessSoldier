@@ -66,9 +66,14 @@ public class GameStateManager : ManagerTemplate<GameStateManager>
 		return m_preState;
 	}
 
-	public GameState GetActiveState()
+	public GameState GetActiveStateType()
 	{
 		return m_activeState;
+	}
+
+	public GameStateBase GetActiveState()
+	{
+		return m_states[(int)m_activeState];
 	}
 
     public void ChangeGameState(GameState state)

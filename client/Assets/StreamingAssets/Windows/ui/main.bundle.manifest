@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1303185074
+CRC: 317789685
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: c7ebc16c96d3c2a29d9b5427e1b565bf
+    Hash: fd1131e41a170f2d3da59d414fd3f894
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5ad585dd02dfb5016c0dad519eab8f49
@@ -12,6 +12,6 @@ ClassTypes:
 - Class: 49
   Script: {instanceID: 0}
 Assets:
-- Assets/Perfab/UI/Login.bytes
-- Assets/Perfab/UI/Login@sprites.bytes
+- Assets/Perfab/UI/Main@sprites.bytes
+- Assets/Perfab/UI/Main.bytes
 Dependencies: []

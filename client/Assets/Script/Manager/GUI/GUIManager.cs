@@ -23,7 +23,7 @@ class GUIAssetBundle
 	{
 		if(reference == 0)
 		{
-			UIPackage.AddPackage(AB);
+			UIPackage.AddPackage(AB, false);
 		}
 		reference++;
 	}
