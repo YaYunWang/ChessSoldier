@@ -22,10 +22,13 @@ namespace KBEngine
 		public virtual void onRoleLevelChanged(UInt32 oldValue) {}
 		public string RoleName = "";
 		public virtual void onRoleNameChanged(string oldValue) {}
-		public UInt32 RoleType = 0;
-		public virtual void onRoleTypeChanged(UInt32 oldValue) {}
+		public UInt16 RoleType = 0;
+		public virtual void onRoleTypeChanged(UInt16 oldValue) {}
 
+		public abstract void QueryPlayerCountResponse(UInt32 arg1); 
 		public abstract void ReCreateAccountResponse(Int32 arg1); 
+		public abstract void onInitBattleField(); 
+		public abstract void onMarchMsg(string arg1); 
 
 		public override void onGetBase()
 		{
@@ -60,9 +63,20 @@ namespace KBEngine
 		{
 			switch(method.methodUtype)
 			{
-				case 2:
+				case 10:
+					UInt32 QueryPlayerCountResponse_arg1 = stream.readUint32();
+					QueryPlayerCountResponse(QueryPlayerCountResponse_arg1);
+					break;
+				case 9:
 					Int32 ReCreateAccountResponse_arg1 = stream.readInt32();
 					ReCreateAccountResponse(ReCreateAccountResponse_arg1);
+					break;
+				case 12:
+					onInitBattleField();
+					break;
+				case 11:
+					string onMarchMsg_arg1 = stream.readUnicode();
+					onMarchMsg(onMarchMsg_arg1);
 					break;
 				default:
 					break;
@@ -91,7 +105,7 @@ namespace KBEngine
 					break;
 				case 2:
 					string oldval_RoleName = RoleName;
-					RoleName = stream.readString();
+					RoleName = stream.readUnicode();
 
 					if(prop.isBase())
 					{
@@ -106,8 +120,8 @@ namespace KBEngine
 
 					break;
 				case 1:
-					UInt32 oldval_RoleType = RoleType;
-					RoleType = stream.readUint32();
+					UInt16 oldval_RoleType = RoleType;
+					RoleType = stream.readUint16();
 
 					if(prop.isBase())
 					{
@@ -209,7 +223,7 @@ namespace KBEngine
 				}
 			}
 
-			UInt32 oldval_RoleType = RoleType;
+			UInt16 oldval_RoleType = RoleType;
 			Property prop_RoleType = pdatas[5];
 			if(prop_RoleType.isBase())
 			{

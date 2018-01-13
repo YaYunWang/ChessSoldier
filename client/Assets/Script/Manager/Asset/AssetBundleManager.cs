@@ -319,28 +319,45 @@ public class AssetBundleManager : ManagerTemplate<AssetBundleManager>
         m_dependencies.Remove(assetBundleName);
     }
 
-    //public static void UnloadAll()
-    //{
-    //    foreach (var bundle in m_loadedAssetBundles.Values)
-    //        bundle.assetBundle.Unload(true);
+	//public static void UnloadAll()
+	//{
+	//    foreach (var bundle in m_loadedAssetBundles.Values)
+	//        bundle.assetBundle.Unload(true);
 
-    //    foreach (var download in m_downloadingWWWs.Values)
-    //        download.Dispose();
+	//    foreach (var download in m_downloadingWWWs.Values)
+	//        download.Dispose();
 
-    //    foreach (var op in m_inProgressOperations)
-    //    {
-    //        if (op is AssetBundleLoadAssetOperation)
-    //            ((AssetBundleLoadAssetOperation)op).Cancel();
-    //    }
+	//    foreach (var op in m_inProgressOperations)
+	//    {
+	//        if (op is AssetBundleLoadAssetOperation)
+	//            ((AssetBundleLoadAssetOperation)op).Cancel();
+	//    }
 
-    //    m_loadedAssetBundles.Clear();
-    //    m_downloadingErrors.Clear();
-    //    m_downloadingWWWs.Clear();
-    //    m_inProgressOperations.Clear();
-    //    m_dependencies.Clear();
-    //}
+	//    m_loadedAssetBundles.Clear();
+	//    m_downloadingErrors.Clear();
+	//    m_downloadingWWWs.Clear();
+	//    m_inProgressOperations.Clear();
+	//    m_dependencies.Clear();
+	//}
 
-    void Update()
+	public static void Clear()
+	{
+		foreach (var pair in m_loadedAssetBundles)
+		{
+			if (pair.Value.assetBundle != null)
+				pair.Value.assetBundle.Unload(false);
+		}
+		m_loadedAssetBundles.Clear();
+
+		m_downloadingErrors.Clear();
+
+		m_keysToRemove.Clear();
+
+		m_inProgressOperations.Clear();
+		m_dependencies.Clear();
+	}
+
+	void Update()
     {
         m_keysToRemove.Clear();
 

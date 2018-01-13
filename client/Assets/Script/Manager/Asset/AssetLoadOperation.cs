@@ -25,6 +25,8 @@ public abstract class AMLoadOperation : IEnumerator
     abstract public bool IsDone();
 
     public abstract void UnloadAssetBundle();
+
+	abstract public float Progress { get; }
 }
 
 public abstract class AMLoadAssetOperation : AMLoadOperation
@@ -42,7 +44,18 @@ public class AssetBundleLoadAssetOperation : AMLoadAssetOperation
     protected bool cancelled = false;
     protected bool unloaded = false;
 
-    public AssetBundleLoadAssetOperation(string assetBundleName, string assetName, System.Type type)
+	public override float Progress
+	{
+		get
+		{
+			if (request == null)
+				return 0.0f;
+			else
+				return request.progress;
+		}
+	}
+
+	public AssetBundleLoadAssetOperation(string assetBundleName, string assetName, System.Type type)
     {
         this.assetBundleName = assetBundleName;
         this.assetName = assetName;
@@ -119,7 +132,15 @@ public class AssetBundleLoadAssetOperationSimulation : AMLoadAssetOperation
 {
     UnityEngine.Object simulatedObject;
 
-    public AssetBundleLoadAssetOperationSimulation(UnityEngine.Object simulatedObject)
+	public override float Progress
+	{
+		get
+		{
+			return 1.0f;
+		}
+	}
+
+	public AssetBundleLoadAssetOperationSimulation(UnityEngine.Object simulatedObject)
     {
         this.simulatedObject = simulatedObject;
     }
@@ -154,7 +175,18 @@ public class AssetBundleLoadLevelOperation : AMLoadOperation
     protected AsyncOperation request;
     protected bool unloaded = false;
 
-    public AssetBundleLoadLevelOperation(string assetbundleName, string levelName, bool isAdditive)
+	public override float Progress
+	{
+		get
+		{
+			if (request == null)
+				return 0.0f;
+			else
+				return request.progress;
+		}
+	}
+
+	public AssetBundleLoadLevelOperation(string assetbundleName, string levelName, bool isAdditive)
     {
         this.assetBundleName = assetbundleName;
         this.levelName = levelName;
@@ -207,7 +239,18 @@ public class AssetBundleLoadLevelSimulationOperation : AMLoadOperation
 {
     AsyncOperation operation = null;
 
-    public AssetBundleLoadLevelSimulationOperation(string assetBundleName, string levelName, bool isAdditive)
+	public override float Progress
+	{
+		get
+		{
+			if (operation == null)
+				return 0.0f;
+			else
+				return operation.progress;
+		}
+	}
+
+	public AssetBundleLoadLevelSimulationOperation(string assetBundleName, string levelName, bool isAdditive)
     {
         string[] levelPaths = UnityEditor.AssetDatabase.GetAssetPathsFromAssetBundleAndAssetName(assetBundleName, levelName);
         if (levelPaths.Length == 0)

@@ -154,7 +154,6 @@ MonoBehaviour:
   ip: 127.0.0.1
   port: 20013
   clientType: 7
-  persistentDataPath: Application.persistentDataPath
   syncPlayer: 1
   threadUpdateHZ: 10
   SEND_BUFFER_MAX: 1460
@@ -190,7 +189,6 @@ GameObject:
   - component: {fileID: 1870132752}
   - component: {fileID: 1870132751}
   - component: {fileID: 1870132750}
-  - component: {fileID: 1870132749}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -198,13 +196,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1870132749
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1870132748}
-  m_Enabled: 1
 --- !u!124 &1870132750
 Behaviour:
   m_ObjectHideFlags: 0

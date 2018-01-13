@@ -22,5 +22,16 @@ public class MainUIPanel : GUIBase
 
 		roleTypeText.text = account.RoleType.ToString();
 		nameText.text = account.RoleName;
+
+		GObject renji_btn = GetChild("renji_btn");
+		renji_btn.onClick.Add(OnRenJiClick);
+	}
+
+	private void OnRenJiClick(EventContext ec)
+	{
+		Debug.Log("on ren ji click.");
+
+		Account account = KBEngineApp.app.player() as Account;
+		account.baseCall("EntryFBSceneRequest", 1);
 	}
 }

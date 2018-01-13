@@ -10,6 +10,7 @@ public class GameStateManager : ManagerTemplate<GameStateManager>
 		ConfigInitialize = 0,
 		Login = 1,
 		Main = 2,
+		BattleField = 3,
 		Count
 	}
 	private GameStateBase[] m_states;
@@ -57,6 +58,7 @@ public class GameStateManager : ManagerTemplate<GameStateManager>
 		m_states[(int)GameState.ConfigInitialize] = new ConfigInitializeState(this);
 		m_states[(int)GameState.Login] = new LoginState(this);
 		m_states[(int)GameState.Main] = new MainState(this);
+		m_states[(int)GameState.BattleField] = new BattleFieldState(this);
 
 		ChangeGameState(GameState.ConfigInitialize);
     }

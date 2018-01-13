@@ -50,6 +50,6 @@ public class ReNameUIPanel : GUIBase
 
 		Account account = KBEngineApp.app.player() as Account;
 
-		account.baseCall("ReCreateAccountRequest", (UINT32)1, nameValue);
+		account.baseCall("ReCreateAccountRequest", 1, nameValue);
 	}
 }
