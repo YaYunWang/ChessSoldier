@@ -1,0 +1,33 @@
+<root>
+	<Implements>
+    
+	</Implements>
+
+	<Properties>
+
+	</Properties>
+
+	<BaseMethods>
+    	<UpdataPlayer>
+    	</UpdataPlayer>
+
+    	<ReqAddPlayer>
+    		<Arg> MAILBOX </Arg>
+    	</ReqAddPlayer>
+
+    	<ReqRemovePlayer>
+    		<Arg> MAILBOX </Arg>
+    	</ReqRemovePlayer>
+
+    	<QueryPlayerCount>
+    		<Arg> MAILBOX </Arg>
+    	</QueryPlayerCount>
+
+    	<EntryFBScene>
+    		<Arg> MAILBOX </Arg>
+    	</EntryFBScene>
+ 	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+</root>

@@ -5,6 +5,8 @@ from KBEDebug import *
 class Account(KBEngine.Proxy):
 	def __init__(self):
 		KBEngine.Proxy.__init__(self)
+
+		KBEngine.globalData["Halls"].ReqAddPlayer(self)
 		
 	def onTimer(self, id, userArg):
 		"""
@@ -42,3 +44,40 @@ class Account(KBEngine.Proxy):
 	def ReCreateAccountRequest(self, role_type, name):
 		self.RoleName = name
 		self.RoleType = role_type
+
+		self.client.ReCreateAccountResponse(0)
+
+	def QueryPlayerCountRequest(self):
+		KBEngine.globalData["Halls"].QueryPlayerCount(self)
+
+	def GetPlayerCount(self, player_count):
+		self.client.QueryPlayerCountResponse(player_count)
+
+	def EntryFBSceneRequest(self, scene_id):
+		KBEngine.globalData["Halls"].EntryFBScene(self)
+
+	def OnClientMsg_March(self, message):
+		if self.client == None:
+			return
+
+		self.client.onMarchMsg(message)
+
+	def OnEnterFB(self, fb):
+		self.currentBattleField = fb
+		self.currentBattleField.AccountReady()
+
+	def creatAvatar(self, battleField):
+		prarm = {
+			'battlefiled':battleField,
+			'roleName':self.RoleName,
+			'roleType':self.RoleType,
+			'account':self					
+			}
+
+		self.Avatar = KBEngine.createBaseLocally("Avatar", prarm)
+		# 这里需要客户端接受到消息后，切换场景，并且切换场景完成后，调用服务器的reqHasEnteredBattlefiled 方法。
+		self.client.onInitBattleField()
+
+	def reqHasEnteredBattlefiled(self):
+		self.giveClientTo(self.Avatar)
+		self.Avatar.onClientInit()

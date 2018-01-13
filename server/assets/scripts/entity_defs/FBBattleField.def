@@ -1,0 +1,35 @@
+<root>
+	<Implements>    
+	</Implements>
+
+	<Properties>
+
+    <player>
+      <Type> MAILBOX </Type>
+      <Flags>			BASE				</Flags>
+    </player>
+   
+	</Properties>
+
+	<BaseMethods>
+		<MsgToClient_March>
+			<Arg> UNICODE </Arg>
+		</MsgToClient_March>
+
+		<AccountReady>
+		</AccountReady>
+
+		<AvatarRegiste>
+			<Arg> MAILBOX </Arg>
+		</AvatarRegiste>
+		
+  	</BaseMethods>
+  
+  	<CellMethods>
+
+  		<initBattle>
+  			<Arg> MAILBOX </Arg>
+  		</initBattle>
+
+	</CellMethods>
+</root>

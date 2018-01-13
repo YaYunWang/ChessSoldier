@@ -1,14 +1,14 @@
 <root>
 	<Properties>
 		<RoleType>
-			<Type>	UINT32	</Type>
+			<Type>	UINT16	</Type>
 			<Flags>	BASE_AND_CLIENT	</Flags>
 			<Default>	0	</Default>
 			<Persistent>	true	</Persistent>
 		</RoleType>
 
 		<RoleName>
-			<Type>	STRING	</Type>
+			<Type>	UNICODE	</Type>
 			<Flags>	BASE_AND_CLIENT	</Flags>
 			<Default>	""	</Default>
 			<Persistent>	true	</Persistent>
@@ -26,13 +26,56 @@
 		<ReCreateAccountResponse>
 			<Arg> INT32 </Arg>
 		</ReCreateAccountResponse>
+
+		<QueryPlayerCountResponse>
+			<Arg> UINT32 </Arg>
+		</QueryPlayerCountResponse>
+
+		<onMarchMsg>
+      		<Arg> UNICODE </Arg>
+    	</onMarchMsg>
+
+    	<onInitBattleField>
+    	</onInitBattleField>
+
 	</ClientMethods>
 
 	<BaseMethods>
 		<ReCreateAccountRequest>
-			<Arg> UINT32 </Arg>
+			<Arg> UINT16 </Arg>
 			<Arg> STRING </Arg>
+			<Exposed/>
 		</ReCreateAccountRequest>
+
+		<EntryFBSceneRequest>
+			<Arg> UINT32 </Arg>
+			<Exposed/>
+		</EntryFBSceneRequest>
+
+		<QueryPlayerCountRequest>
+			<Exposed/>
+		</QueryPlayerCountRequest>
+
+		<reqHasEnteredBattlefiled>
+    		<Exposed/>
+    	</reqHasEnteredBattlefiled>
+
+		<GetPlayerCount>
+			<Arg> UINT32 </Arg>
+		</GetPlayerCount>
+
+		<OnClientMsg_March>
+     		<Arg> UNICODE </Arg>
+    	</OnClientMsg_March>
+
+    	<OnEnterFB>
+    		<Arg> MAILBOX </Arg>
+    	</OnEnterFB>
+
+    	<creatAvatar>
+    		<Arg> MAILBOX </Arg>
+    	</creatAvatar>
+
 	</BaseMethods>
 
 	<CellMethods>

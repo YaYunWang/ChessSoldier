@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+  
+  <Implements>
+  </Implements>
+
+  <Properties>
+      <battlefiled>
+          <Type> MAILBOX </Type>
+          <Flags> BASE </Flags>
+      </battlefiled>
+
+      <account>
+          <Type> MAILBOX </Type>
+          <Flags> BASE </Flags>
+      </account>
+
+       <roleName>
+          <Type> UNICODE </Type>
+          <Flags> BASE_AND_CLIENT </Flags>
+      </roleName>
+
+      <roleType>
+          <Type> UINT16 </Type>
+          <Flags> BASE_AND_CLIENT </Flags>
+      </roleType>
+  </Properties>
+
+  <BaseMethods>
+      <onClientInit>
+      </onClientInit>
+  </BaseMethods>
+
+  <CellMethods>
+  </CellMethods>
+
+  <ClientMethods>
+  </ClientMethods>
+
+</root>
