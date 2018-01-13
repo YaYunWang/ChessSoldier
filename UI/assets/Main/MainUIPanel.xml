@@ -5,5 +5,7 @@
     <text id="n1_9xrb" name="n1" xy="35,82" size="129,40" fontSize="31" autoSize="none" text="名字："/>
     <text id="n2_9xrb" name="role_type" xy="171,33" size="120,39" fontSize="31" autoSize="none" text=""/>
     <text id="n3_9xrb" name="name" xy="171,81" size="215,39" fontSize="31" autoSize="none" text=""/>
+    <component id="n4_p3xn" name="renji_btn" src="uu5i6" pkg="5xx7jigk" xy="167,259"/>
+    <text id="n5_p3xn" name="111" xy="223,294" size="89,51" fontSize="21" autoSize="none" text="人机对战"/>
   </displayList>
 </component>
