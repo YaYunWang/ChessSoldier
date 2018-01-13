@@ -13,6 +13,7 @@
 		配置assets\res\server kbengine.xml数据库相关内容
 		
 	2018年1月9日 17:20:16  已经可以成功创建Account。
+	2018年1月13日 16:18:51  进入战场流程初步完成
 	
 	公司电脑mysql  lsa 123456
 	
