@@ -7,45 +7,33 @@ from KBEDebug import *
 class Hall(KBEngine.Base):
 	def __init__(self):
 		DEBUG_MSG("Hall init")
+
+		self.RoomCount = 10
+
 		KBEngine.Base.__init__(self)
 		KBEngine.globalData["Halls"] = self
 
-		self.players = []
+		self.rooms = []
 
-		self.addTimer(1, 5, 1)
+		addTimer(0.1, 0.1, 1)
 
 	def onTimer(self, id, userArg):
-		if userArg == 1:
-			self.UpdataPlayer()
+		if(userArg == 1):
+			roomNum = len(self.rooms)
+			if(roomNum >= self.RoomCount):
+				delTimer(id)
+			else:
+				createRoom(roomNum)
 
-	def ReqAddPlayer(self, player_mailbox):
-		if player_mailbox in self.players:
-			return
-
-		self.players.append(player_mailbox)
-
-	def ReqRemovePlayer(self, player_mailbox):
-		if not player_mailbox in self.players:
-			return
-			
-		sefl.players.remove(player_mailbox)
-
-	def UpdataPlayer(self):
-		for i in range(len(self.players)):
-			if self.players[i].isDestroyed == True:
-				del self.players[i]
-				self.UpdataPlayer()
-				return
-
-
-	def QueryPlayerCount(self, account):
-		player_count = len(self.players)
-		account.GetPlayerCount(player_count)
-
-	def EntryFBScene(self, account):
-		prarm = {
-			"player":account
+	def createRoom(self, index):
+		params = {
+			"index":index
 		}
 
-		BattleField = KBEngine.createBaseAnywhere("FBBattleField", prarm)
+		room = KBEngine.createBaseLocally("Room", params)
 
+	def appendRoom(self, room):
+		self.rooms.append(room, [])
+
+	def ReRoomInfoRequest(self, account):
+		pass

@@ -1,0 +1,16 @@
+<root>
+	<Properties>
+		<Index>
+			<Type>	UINT16	</Type>
+			<Flags>	BASE	</Flags>
+		</RoleType>
+	</Properties>
+
+	<ClientMethods></ClientMethods>
+
+	<BaseMethods>
+	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+</root>

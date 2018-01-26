@@ -27,54 +27,21 @@
 			<Arg> INT32 </Arg>
 		</ReCreateAccountResponse>
 
-		<QueryPlayerCountResponse>
-			<Arg> UINT32 </Arg>
-		</QueryPlayerCountResponse>
-
-		<onMarchMsg>
-      		<Arg> UNICODE </Arg>
-    	</onMarchMsg>
-
-    	<onInitBattleField>
-    	</onInitBattleField>
+		<ReRoomInfoResponse>
+		</ReRoomInfoResponse>
 
 	</ClientMethods>
 
 	<BaseMethods>
+	
 		<ReCreateAccountRequest>
 			<Arg> UINT16 </Arg>
 			<Arg> STRING </Arg>
 			<Exposed/>
 		</ReCreateAccountRequest>
 
-		<EntryFBSceneRequest>
-			<Arg> UINT32 </Arg>
-			<Exposed/>
-		</EntryFBSceneRequest>
-
-		<QueryPlayerCountRequest>
-			<Exposed/>
-		</QueryPlayerCountRequest>
-
-		<reqHasEnteredBattlefiled>
-    		<Exposed/>
-    	</reqHasEnteredBattlefiled>
-
-		<GetPlayerCount>
-			<Arg> UINT32 </Arg>
-		</GetPlayerCount>
-
-		<OnClientMsg_March>
-     		<Arg> UNICODE </Arg>
-    	</OnClientMsg_March>
-
-    	<OnEnterFB>
-    		<Arg> MAILBOX </Arg>
-    	</OnEnterFB>
-
-    	<creatAvatar>
-    		<Arg> MAILBOX </Arg>
-    	</creatAvatar>
+		<ReRoomInfoRequest>
+		</ReRoomInfoRequest>
 
 	</BaseMethods>
 

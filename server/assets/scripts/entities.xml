@@ -7,7 +7,7 @@
 
 	<!-- <Avatar/> -->
 	<Account hasClient="true"></Account><!-- <Account hasCell="true" hasBase="true" hasClient="true"></Account> -->
-	<Avatar hasClient="true"></Avatar>
+	<!--Avatar hasClient="true"></Avatar-->
 	<Hall/>
-	<FBBattleField/>
+	<Room/>
 </root>
