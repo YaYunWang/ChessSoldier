@@ -1,0 +1,259 @@
+fileFormatVersion: 2
+guid: 69c7d958981844c429017ff431a60391
+timeCreated: 1497529051
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: 311303
+    100004: attach_point
+    100006: Bip01
+    100008: Bip01 Head
+    100010: Bip01 HeadNub
+    100012: Bip01 L Calf
+    100014: Bip01 L Clavicle
+    100016: Bip01 L Finger0
+    100018: Bip01 L Finger01
+    100020: Bip01 L Finger02
+    100022: Bip01 L Finger0Nub
+    100024: Bip01 L Finger1
+    100026: Bip01 L Finger11
+    100028: Bip01 L Finger12
+    100030: Bip01 L Finger1Nub
+    100032: Bip01 L Foot
+    100034: Bip01 L Forearm
+    100036: Bip01 L Hand
+    100038: Bip01 L Thigh
+    100040: Bip01 L Toe0
+    100042: Bip01 L Toe0Nub
+    100044: Bip01 L UpperArm
+    100046: Bip01 Neck
+    100048: Bip01 Pelvis
+    100050: Bip01 Prop1
+    100052: Bip01 Prop2
+    100054: Bip01 R Calf
+    100056: Bip01 R Clavicle
+    100058: Bip01 R Finger0
+    100060: Bip01 R Finger01
+    100062: Bip01 R Finger02
+    100064: Bip01 R Finger0Nub
+    100066: Bip01 R Finger1
+    100068: Bip01 R Finger11
+    100070: Bip01 R Finger12
+    100072: Bip01 R Finger1Nub
+    100074: Bip01 R Foot
+    100076: Bip01 R Forearm
+    100078: Bip01 R Hand
+    100080: Bip01 R Thigh
+    100082: Bip01 R Toe0
+    100084: Bip01 R Toe0Nub
+    100086: Bip01 R UpperArm
+    100088: Bip01 Spine
+    100090: Bip01 Spine1
+    100092: Bip01 Spine2
+    100094: body_01
+    100096: Calf_L_01
+    100098: Calf_R_01
+    100100: camera_01
+    100102: Dummy01
+    100104: effect_point
+    100106: equipment_Hand_L_01
+    100108: equipment_Hand_R_01
+    100110: foot_L_01
+    100112: foot_L_01 1
+    100114: foot_R_01
+    100116: foot_R_01 1
+    100118: Forearm_L_01
+    100120: Forearm_R_01
+    100122: hand_L_01
+    100124: hand_R_01
+    100126: head_01
+    100128: mine_camera_gua
+    100130: navel_01
+    100132: neck_01
+    100134: qunbai_B_01
+    100136: qunbai_B_02
+    100138: qunbai_B_03
+    100140: qunbai_F_01
+    100142: qunbai_F_02
+    100144: qunbai_F_03
+    100146: qunbai_L_01
+    100148: qunbai_L_02
+    100150: qunbai_L_03
+    100152: qunbai_point
+    100154: qunbai_R_01
+    100156: qunbai_R_02
+    100158: qunbai_R_03
+    100160: Root
+    100162: Thigh_L_01
+    100164: Thigh_R_01
+    100166: UpperArm_L_01
+    100168: UpperArm_R_01
+    100170: weapon_back_01
+    100172: weapon_back_02
+    100174: weapon_R_01
+    100176: weapon_R_02
+    400000: 311303
+    400002: //RootNode
+    400004: attach_point
+    400006: Bip01
+    400008: Bip01 Head
+    400010: Bip01 HeadNub
+    400012: Bip01 L Calf
+    400014: Bip01 L Clavicle
+    400016: Bip01 L Finger0
+    400018: Bip01 L Finger01
+    400020: Bip01 L Finger02
+    400022: Bip01 L Finger0Nub
+    400024: Bip01 L Finger1
+    400026: Bip01 L Finger11
+    400028: Bip01 L Finger12
+    400030: Bip01 L Finger1Nub
+    400032: Bip01 L Foot
+    400034: Bip01 L Forearm
+    400036: Bip01 L Hand
+    400038: Bip01 L Thigh
+    400040: Bip01 L Toe0
+    400042: Bip01 L Toe0Nub
+    400044: Bip01 L UpperArm
+    400046: Bip01 Neck
+    400048: Bip01 Pelvis
+    400050: Bip01 Prop1
+    400052: Bip01 Prop2
+    400054: Bip01 R Calf
+    400056: Bip01 R Clavicle
+    400058: Bip01 R Finger0
+    400060: Bip01 R Finger01
+    400062: Bip01 R Finger02
+    400064: Bip01 R Finger0Nub
+    400066: Bip01 R Finger1
+    400068: Bip01 R Finger11
+    400070: Bip01 R Finger12
+    400072: Bip01 R Finger1Nub
+    400074: Bip01 R Foot
+    400076: Bip01 R Forearm
+    400078: Bip01 R Hand
+    400080: Bip01 R Thigh
+    400082: Bip01 R Toe0
+    400084: Bip01 R Toe0Nub
+    400086: Bip01 R UpperArm
+    400088: Bip01 Spine
+    400090: Bip01 Spine1
+    400092: Bip01 Spine2
+    400094: body_01
+    400096: Calf_L_01
+    400098: Calf_R_01
+    400100: camera_01
+    400102: Dummy01
+    400104: effect_point
+    400106: equipment_Hand_L_01
+    400108: equipment_Hand_R_01
+    400110: foot_L_01
+    400112: foot_L_01 1
+    400114: foot_R_01
+    400116: foot_R_01 1
+    400118: Forearm_L_01
+    400120: Forearm_R_01
+    400122: hand_L_01
+    400124: hand_R_01
+    400126: head_01
+    400128: mine_camera_gua
+    400130: navel_01
+    400132: neck_01
+    400134: qunbai_B_01
+    400136: qunbai_B_02
+    400138: qunbai_B_03
+    400140: qunbai_F_01
+    400142: qunbai_F_02
+    400144: qunbai_F_03
+    400146: qunbai_L_01
+    400148: qunbai_L_02
+    400150: qunbai_L_03
+    400152: qunbai_point
+    400154: qunbai_R_01
+    400156: qunbai_R_02
+    400158: qunbai_R_03
+    400160: Root
+    400162: Thigh_L_01
+    400164: Thigh_R_01
+    400166: UpperArm_L_01
+    400168: UpperArm_R_01
+    400170: weapon_back_01
+    400172: weapon_back_02
+    400174: weapon_R_01
+    400176: weapon_R_02
+    4300000: 311303
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: 311303
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

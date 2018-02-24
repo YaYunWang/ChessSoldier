@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Preload
+  m_Shaders:
+    data:
+      first: {fileID: 4800000, guid: 03d939a9301a09042b09000a57fa62f4, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+        - keywords: BILLBOARD_ON
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: 040697a4b9c8fc94ebf89971be5c3684, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+        - keywords: BILLBOARD_ON
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: 0dfd3740d59049f4d957233014a459c6, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+        - keywords: BILLBOARD_ON
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: 0e1ba1fecaf24c24e840eb9cbc5acc5f, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+        - keywords: BILLBOARD_ON
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: 2e44a8ff3a05d9b449573611450cc012, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+        - keywords: BILLBOARD_ON
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: 5e9a26666d7003f478e4d6ab86cb1fa7, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: 997a83ba0384a114daa9dfb30cc2c3f8, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+        - keywords: BILLBOARD_ON
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: c78e8c4318300fc4c89f8de53fd9bf52, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: dc1949c1e37b36643907fafa3e8a63a8, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0
+        - keywords: BILLBOARD_ON
+          passType: 0
+    data:
+      first: {fileID: 4800000, guid: ebb4b89b6995d3b498530f2b8088cc6a, type: 3}
+      second:
+        variants:
+        - keywords: 
+          passType: 0

@@ -166,95 +166,34 @@ namespace KBEngine
 
 			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), property(RoleType / 1).");
 
-			List<DATATYPE_BASE> pAccount_QueryPlayerCountResponse_args = new List<DATATYPE_BASE>();
-			pAccount_QueryPlayerCountResponse_args.Add(EntityDef.id2datatypes[4]);
-
-			Method pAccount_QueryPlayerCountResponse = new Method();
-			pAccount_QueryPlayerCountResponse.name = "QueryPlayerCountResponse";
-			pAccount_QueryPlayerCountResponse.methodUtype = 10;
-			pAccount_QueryPlayerCountResponse.aliasID = 0;
-			pAccount_QueryPlayerCountResponse.args = pAccount_QueryPlayerCountResponse_args;
-
-			pAccountModule.methods["QueryPlayerCountResponse"] = pAccount_QueryPlayerCountResponse; 
-			pAccountModule.useMethodDescrAlias = true;
-			pAccountModule.idmethods[(UInt16)pAccount_QueryPlayerCountResponse.aliasID] = pAccount_QueryPlayerCountResponse;
-
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(QueryPlayerCountResponse / 10).");
-
 			List<DATATYPE_BASE> pAccount_ReCreateAccountResponse_args = new List<DATATYPE_BASE>();
 			pAccount_ReCreateAccountResponse_args.Add(EntityDef.id2datatypes[8]);
 
 			Method pAccount_ReCreateAccountResponse = new Method();
 			pAccount_ReCreateAccountResponse.name = "ReCreateAccountResponse";
-			pAccount_ReCreateAccountResponse.methodUtype = 9;
-			pAccount_ReCreateAccountResponse.aliasID = 1;
+			pAccount_ReCreateAccountResponse.methodUtype = 3;
+			pAccount_ReCreateAccountResponse.aliasID = 0;
 			pAccount_ReCreateAccountResponse.args = pAccount_ReCreateAccountResponse_args;
 
 			pAccountModule.methods["ReCreateAccountResponse"] = pAccount_ReCreateAccountResponse; 
 			pAccountModule.useMethodDescrAlias = true;
 			pAccountModule.idmethods[(UInt16)pAccount_ReCreateAccountResponse.aliasID] = pAccount_ReCreateAccountResponse;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReCreateAccountResponse / 9).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReCreateAccountResponse / 3).");
 
-			List<DATATYPE_BASE> pAccount_onInitBattleField_args = new List<DATATYPE_BASE>();
+			List<DATATYPE_BASE> pAccount_ReRoomInfoResponse_args = new List<DATATYPE_BASE>();
 
-			Method pAccount_onInitBattleField = new Method();
-			pAccount_onInitBattleField.name = "onInitBattleField";
-			pAccount_onInitBattleField.methodUtype = 12;
-			pAccount_onInitBattleField.aliasID = 2;
-			pAccount_onInitBattleField.args = pAccount_onInitBattleField_args;
+			Method pAccount_ReRoomInfoResponse = new Method();
+			pAccount_ReRoomInfoResponse.name = "ReRoomInfoResponse";
+			pAccount_ReRoomInfoResponse.methodUtype = 4;
+			pAccount_ReRoomInfoResponse.aliasID = 1;
+			pAccount_ReRoomInfoResponse.args = pAccount_ReRoomInfoResponse_args;
 
-			pAccountModule.methods["onInitBattleField"] = pAccount_onInitBattleField; 
+			pAccountModule.methods["ReRoomInfoResponse"] = pAccount_ReRoomInfoResponse; 
 			pAccountModule.useMethodDescrAlias = true;
-			pAccountModule.idmethods[(UInt16)pAccount_onInitBattleField.aliasID] = pAccount_onInitBattleField;
+			pAccountModule.idmethods[(UInt16)pAccount_ReRoomInfoResponse.aliasID] = pAccount_ReRoomInfoResponse;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(onInitBattleField / 12).");
-
-			List<DATATYPE_BASE> pAccount_onMarchMsg_args = new List<DATATYPE_BASE>();
-			pAccount_onMarchMsg_args.Add(EntityDef.id2datatypes[12]);
-
-			Method pAccount_onMarchMsg = new Method();
-			pAccount_onMarchMsg.name = "onMarchMsg";
-			pAccount_onMarchMsg.methodUtype = 11;
-			pAccount_onMarchMsg.aliasID = 3;
-			pAccount_onMarchMsg.args = pAccount_onMarchMsg_args;
-
-			pAccountModule.methods["onMarchMsg"] = pAccount_onMarchMsg; 
-			pAccountModule.useMethodDescrAlias = true;
-			pAccountModule.idmethods[(UInt16)pAccount_onMarchMsg.aliasID] = pAccount_onMarchMsg;
-
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(onMarchMsg / 11).");
-
-			List<DATATYPE_BASE> pAccount_EntryFBSceneRequest_args = new List<DATATYPE_BASE>();
-			pAccount_EntryFBSceneRequest_args.Add(EntityDef.id2datatypes[4]);
-
-			Method pAccount_EntryFBSceneRequest = new Method();
-			pAccount_EntryFBSceneRequest.name = "EntryFBSceneRequest";
-			pAccount_EntryFBSceneRequest.methodUtype = 2;
-			pAccount_EntryFBSceneRequest.aliasID = -1;
-			pAccount_EntryFBSceneRequest.args = pAccount_EntryFBSceneRequest_args;
-
-			pAccountModule.methods["EntryFBSceneRequest"] = pAccount_EntryFBSceneRequest; 
-			pAccountModule.base_methods["EntryFBSceneRequest"] = pAccount_EntryFBSceneRequest;
-
-			pAccountModule.idbase_methods[pAccount_EntryFBSceneRequest.methodUtype] = pAccount_EntryFBSceneRequest;
-
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(EntryFBSceneRequest / 2).");
-
-			List<DATATYPE_BASE> pAccount_QueryPlayerCountRequest_args = new List<DATATYPE_BASE>();
-
-			Method pAccount_QueryPlayerCountRequest = new Method();
-			pAccount_QueryPlayerCountRequest.name = "QueryPlayerCountRequest";
-			pAccount_QueryPlayerCountRequest.methodUtype = 3;
-			pAccount_QueryPlayerCountRequest.aliasID = -1;
-			pAccount_QueryPlayerCountRequest.args = pAccount_QueryPlayerCountRequest_args;
-
-			pAccountModule.methods["QueryPlayerCountRequest"] = pAccount_QueryPlayerCountRequest; 
-			pAccountModule.base_methods["QueryPlayerCountRequest"] = pAccount_QueryPlayerCountRequest;
-
-			pAccountModule.idbase_methods[pAccount_QueryPlayerCountRequest.methodUtype] = pAccount_QueryPlayerCountRequest;
-
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(QueryPlayerCountRequest / 3).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReRoomInfoResponse / 4).");
 
 			List<DATATYPE_BASE> pAccount_ReCreateAccountRequest_args = new List<DATATYPE_BASE>();
 			pAccount_ReCreateAccountRequest_args.Add(EntityDef.id2datatypes[3]);
@@ -272,21 +211,6 @@ namespace KBEngine
 			pAccountModule.idbase_methods[pAccount_ReCreateAccountRequest.methodUtype] = pAccount_ReCreateAccountRequest;
 
 			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(ReCreateAccountRequest / 1).");
-
-			List<DATATYPE_BASE> pAccount_reqHasEnteredBattlefiled_args = new List<DATATYPE_BASE>();
-
-			Method pAccount_reqHasEnteredBattlefiled = new Method();
-			pAccount_reqHasEnteredBattlefiled.name = "reqHasEnteredBattlefiled";
-			pAccount_reqHasEnteredBattlefiled.methodUtype = 4;
-			pAccount_reqHasEnteredBattlefiled.aliasID = -1;
-			pAccount_reqHasEnteredBattlefiled.args = pAccount_reqHasEnteredBattlefiled_args;
-
-			pAccountModule.methods["reqHasEnteredBattlefiled"] = pAccount_reqHasEnteredBattlefiled; 
-			pAccountModule.base_methods["reqHasEnteredBattlefiled"] = pAccount_reqHasEnteredBattlefiled;
-
-			pAccountModule.idbase_methods[pAccount_reqHasEnteredBattlefiled.methodUtype] = pAccount_reqHasEnteredBattlefiled;
-
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Account), method(reqHasEnteredBattlefiled / 4).");
 
 			ScriptModule pAvatarModule = new ScriptModule("Avatar");
 			EntityDef.moduledefs["Avatar"] = pAvatarModule;
@@ -337,7 +261,7 @@ namespace KBEngine
 
 			Property pAvatar_roleName = new Property();
 			pAvatar_roleName.name = "roleName";
-			pAvatar_roleName.properUtype = 6;
+			pAvatar_roleName.properUtype = 4;
 			pAvatar_roleName.properFlags = 32;
 			pAvatar_roleName.aliasID = 3;
 			string Avatar_roleName_defval = "";
@@ -347,11 +271,11 @@ namespace KBEngine
 			pAvatarModule.usePropertyDescrAlias = true;
 			pAvatarModule.idpropertys[(UInt16)pAvatar_roleName.aliasID] = pAvatar_roleName;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Avatar), property(roleName / 6).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Avatar), property(roleName / 4).");
 
 			Property pAvatar_roleType = new Property();
 			pAvatar_roleType.name = "roleType";
-			pAvatar_roleType.properUtype = 7;
+			pAvatar_roleType.properUtype = 5;
 			pAvatar_roleType.properFlags = 32;
 			pAvatar_roleType.aliasID = 4;
 			UInt16 Avatar_roleType_defval;
@@ -362,7 +286,7 @@ namespace KBEngine
 			pAvatarModule.usePropertyDescrAlias = true;
 			pAvatarModule.idpropertys[(UInt16)pAvatar_roleType.aliasID] = pAvatar_roleType;
 
-			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Avatar), property(roleType / 7).");
+			//Dbg.DEBUG_MSG("EntityDef::initScriptModules: add(Avatar), property(roleType / 5).");
 
 		}
 

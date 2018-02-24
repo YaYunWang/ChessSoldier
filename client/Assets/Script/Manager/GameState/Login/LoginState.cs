@@ -16,7 +16,13 @@ public class LoginState : GameStateBase
 
 		KBEngine.Event.registerOut("AccountCreate", this, "OnAccountCreate");
 
-		GUIManager.ShowOrLoadView<LoginUIPanel>("Login", "LoginUIPanel");
+		//GUIManager.ShowOrLoadView<LoginUIPanel>("Login", "LoginUIPanel");
+
+		// 测试
+		Avatar avatar = new Avatar();
+		avatar.roleType = 2;
+
+		EntityManager.CreateEntityFromNetObject(avatar);
 	}
 
 	public void OnAccountCreate(Account account)

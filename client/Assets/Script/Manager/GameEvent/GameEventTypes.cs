@@ -12,4 +12,6 @@ public enum GameEventTypes
 
     BeginSkill,         //技能开始
     EndSkill,           //技能结束
+
+	EntityCreated,
 }

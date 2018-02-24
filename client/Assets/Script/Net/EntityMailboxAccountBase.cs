@@ -20,25 +20,6 @@ namespace KBEngine
 			type = MAILBOX_TYPE.MAILBOX_TYPE_BASE;
 		}
 
-		public void EntryFBSceneRequest(UInt32 arg1)
-		{
-			Bundle pBundle = newMail("EntryFBSceneRequest");
-			if(pBundle == null)
-				return;
-
-			bundle.writeUint32(arg1);
-			postMail(null);
-		}
-
-		public void QueryPlayerCountRequest()
-		{
-			Bundle pBundle = newMail("QueryPlayerCountRequest");
-			if(pBundle == null)
-				return;
-
-			postMail(null);
-		}
-
 		public void ReCreateAccountRequest(UInt16 arg1, string arg2)
 		{
 			Bundle pBundle = newMail("ReCreateAccountRequest");
@@ -47,15 +28,6 @@ namespace KBEngine
 
 			bundle.writeUint16(arg1);
 			bundle.writeString(arg2);
-			postMail(null);
-		}
-
-		public void reqHasEnteredBattlefiled()
-		{
-			Bundle pBundle = newMail("reqHasEnteredBattlefiled");
-			if(pBundle == null)
-				return;
-
 			postMail(null);
 		}
 

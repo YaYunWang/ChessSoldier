@@ -1,0 +1,4 @@
+<Table>
+  <Row ID="1" Sex="1" Prof="1" AttackType="0" TopLevel="370" BornBody="311301_d" ShowBone="311300" ShowBody="20104000" ShowWeapon="20110013" Controller="311101"/>
+  <Row ID="2" Sex="0" Prof="2" AttackType="1" TopLevel="370" BornBody="311301_d" ShowBone="311300" ShowBody="20105000" ShowWeapon="20120013" Controller="311101"/>
+</Table>

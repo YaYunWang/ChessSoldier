@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf219c1dc25283641a38847b7367e449, type: 3}
+  m_Name: skin_311304_d1
+  m_EditorClassIdentifier: 
+  bones:
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 R Clavicle/Bip01
+    R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 R Finger1/Bip01 R Finger11
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 R Clavicle/Bip01
+    R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 R Finger1/Bip01 R Finger11/Bip01
+    R Finger12
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 R Clavicle/Bip01
+    R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 R Finger1/Bip01 R Finger11/Bip01
+    R Finger12/Bip01 R Finger1Nub
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 R Clavicle/Bip01
+    R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 R Finger1
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 R Clavicle/Bip01
+    R UpperArm/Bip01 R Forearm/Bip01 R Hand
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 R Clavicle/Bip01
+    R UpperArm/Bip01 R Forearm
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 R Clavicle/Bip01
+    R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 R Finger0/Bip01 R Finger01
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 R Clavicle/Bip01
+    R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 R Finger0/Bip01 R Finger01/Bip01
+    R Finger02
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 R Clavicle/Bip01
+    R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 R Finger0
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 R Clavicle/Bip01
+    R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 R Finger0/Bip01 R Finger01/Bip01
+    R Finger02/Bip01 R Finger0Nub
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 L Clavicle/Bip01
+    L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 L Finger1/Bip01 L Finger11/Bip01
+    L Finger12
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 L Clavicle/Bip01
+    L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 L Finger1/Bip01 L Finger11
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 L Clavicle/Bip01
+    L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 L Finger1/Bip01 L Finger11/Bip01
+    L Finger12/Bip01 L Finger1Nub
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 L Clavicle/Bip01
+    L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 L Finger1
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 L Clavicle/Bip01
+    L UpperArm/Bip01 L Forearm/Bip01 L Hand
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 L Clavicle/Bip01
+    L UpperArm/Bip01 L Forearm
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 L Clavicle/Bip01
+    L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 L Finger0/Bip01 L Finger01
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 L Clavicle/Bip01
+    L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 L Finger0
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 L Clavicle/Bip01
+    L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 L Finger0/Bip01 L Finger01/Bip01
+    L Finger02
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 L Clavicle/Bip01
+    L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 L Finger0/Bip01 L Finger01/Bip01
+    L Finger02/Bip01 L Finger0Nub
+  - Root/Bip01/Bip01 Pelvis/qunbai_R_01
+  - Root/Bip01/Bip01 Pelvis/Bip01 R Thigh
+  - Root/Bip01/Bip01 Pelvis/qunbai_B_01
+  - Root/Bip01/Bip01 Pelvis
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine
+  - Root/Bip01/Bip01 Pelvis/qunbai_R_01/qunbai_R_02
+  - Root/Bip01/Bip01 Pelvis/qunbai_L_01
+  - Root/Bip01/Bip01 Pelvis/Bip01 L Thigh
+  - Root/Bip01/Bip01 Pelvis/qunbai_L_01/qunbai_L_02
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 R Clavicle/Bip01
+    R UpperArm
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 L Clavicle/Bip01
+    L UpperArm
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 L Clavicle
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 R Clavicle
+  - Root/Bip01/Bip01 Pelvis/qunbai_F_01
+  - Root/Bip01/Bip01 Pelvis/qunbai_F_01/qunbai_F_02
+  - Root/Bip01/Bip01 Pelvis/qunbai_B_01/qunbai_B_02
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 Neck/Bip01
+    Head
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 Neck
+  - Root/Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Spine2/Bip01 Neck/Bip01
+    Head/Bip01 HeadNub
+  - Root/Bip01/Bip01 Pelvis/qunbai_B_01/qunbai_B_02/qunbai_B_03
+  - Root/Bip01/Bip01 Pelvis/Bip01 L Thigh/Bip01 L Calf
+  - Root/Bip01/Bip01 Pelvis/Bip01 L Thigh/Bip01 L Calf/Bip01 L Foot
+  - Root/Bip01/Bip01 Pelvis/Bip01 L Thigh/Bip01 L Calf/Bip01 L Foot/Bip01 L Toe0
+  - Root/Bip01/Bip01 Pelvis/Bip01 L Thigh/Bip01 L Calf/Bip01 L Foot/Bip01 L Toe0/Bip01
+    L Toe0Nub
+  - Root/Bip01/Bip01 Pelvis/Bip01 R Thigh/Bip01 R Calf
+  - Root/Bip01/Bip01 Pelvis/Bip01 R Thigh/Bip01 R Calf/Bip01 R Foot
+  - Root/Bip01/Bip01 Pelvis/Bip01 R Thigh/Bip01 R Calf/Bip01 R Foot/Bip01 R Toe0
+  - Root/Bip01/Bip01 Pelvis/Bip01 R Thigh/Bip01 R Calf/Bip01 R Foot/Bip01 R Toe0/Bip01
+    R Toe0Nub
+  materials:
+  - {fileID: 2100000, guid: 73c38a24de7566a438099d29a06e39c2, type: 2}
+  mesh: {fileID: 4300000, guid: 8e1f001388d3c0a4b802d07825d3c963, type: 3}
+  extraTransformNames:
+  - attach_point
+  - effect_point
+  - Root
+  - foot_L_01
+  - calf_L_01
+  - thigh_L_01
+  - foot_R_01
+  - calf_R_01
+  - thigh_R_01
+  - addPoint_01
+  - equipment_Hand_L_01
+  - hand_L_01
+  - hand_L_01
+  - forearm_L_01
+  - upperArm_L_01
+  - head_01
+  - head_01
+  - equipment_Hand_R_01
+  - hand_R_01
+  - hand_R_01
+  - forearm_R_01
+  - forearm_R_01
+  - upperArm_R_01
+  - weapon_back_01
+  - weapon_back_02
+  - body_01
+  - navel_01
+  - qunbai_point
+  - weapon_R_01

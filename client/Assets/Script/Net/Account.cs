@@ -19,19 +19,8 @@ namespace KBEngine
 			Event.fireOut("ReCreateAccountResponse", arg1);
 		}
 
-		public override void QueryPlayerCountResponse(uint arg1)
+		public override void ReRoomInfoResponse()
 		{
-			Debug.Log("当前人数：" + arg1);
-		}
-
-		public override void onInitBattleField()
-		{
-			Event.fireOut("StartBattleFieldEvent");
-		}
-
-		public override void onMarchMsg(string arg1)
-		{
-			Debug.Log("march msg:" + arg1);
 		}
 	}
 }

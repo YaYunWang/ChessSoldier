@@ -98,7 +98,7 @@ namespace KBEngine
 					}
 
 					break;
-				case 6:
+				case 4:
 					string oldval_roleName = roleName;
 					roleName = stream.readUnicode();
 
@@ -114,7 +114,7 @@ namespace KBEngine
 					}
 
 					break;
-				case 7:
+				case 5:
 					UInt16 oldval_roleType = roleType;
 					roleType = stream.readUint16();
 

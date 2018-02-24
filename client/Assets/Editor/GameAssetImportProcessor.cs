@@ -11,7 +11,7 @@ public class GameAssetImportProcessor : AssetPostprocessor
         const string ICON_PATH = "Assets/Arts/Sprites/";
         const string AUDIO_PATH = "Assets/Arts/Audio/";
         const string EFFECT_PATH = "Assets/Arts/Effects/";
-        const string CONTROLLER_PATH = "Assets/Prefabs/Controllers/";
+        const string CONTROLLER_PATH = "Assets/Perfab/Controllers/";
 
 		foreach (string str in importedAssets)
         {

@@ -25,10 +25,8 @@ namespace KBEngine
 		public UInt16 RoleType = 0;
 		public virtual void onRoleTypeChanged(UInt16 oldValue) {}
 
-		public abstract void QueryPlayerCountResponse(UInt32 arg1); 
 		public abstract void ReCreateAccountResponse(Int32 arg1); 
-		public abstract void onInitBattleField(); 
-		public abstract void onMarchMsg(string arg1); 
+		public abstract void ReRoomInfoResponse(); 
 
 		public override void onGetBase()
 		{
@@ -63,20 +61,12 @@ namespace KBEngine
 		{
 			switch(method.methodUtype)
 			{
-				case 10:
-					UInt32 QueryPlayerCountResponse_arg1 = stream.readUint32();
-					QueryPlayerCountResponse(QueryPlayerCountResponse_arg1);
-					break;
-				case 9:
+				case 3:
 					Int32 ReCreateAccountResponse_arg1 = stream.readInt32();
 					ReCreateAccountResponse(ReCreateAccountResponse_arg1);
 					break;
-				case 12:
-					onInitBattleField();
-					break;
-				case 11:
-					string onMarchMsg_arg1 = stream.readUnicode();
-					onMarchMsg(onMarchMsg_arg1);
+				case 4:
+					ReRoomInfoResponse();
 					break;
 				default:
 					break;
