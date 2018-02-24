@@ -6,16 +6,6 @@
   </Implements>
 
   <Properties>
-      <battlefiled>
-          <Type> MAILBOX </Type>
-          <Flags> BASE </Flags>
-      </battlefiled>
-
-      <account>
-          <Type> MAILBOX </Type>
-          <Flags> BASE </Flags>
-      </account>
-
        <roleName>
           <Type> UNICODE </Type>
           <Flags> BASE_AND_CLIENT </Flags>
@@ -28,8 +18,6 @@
   </Properties>
 
   <BaseMethods>
-      <onClientInit>
-      </onClientInit>
   </BaseMethods>
 
   <CellMethods>
